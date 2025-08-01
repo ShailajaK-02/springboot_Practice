@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 public class myController {
 
-    //get emp by id
+    //get Data By Id API(Endpoint)
     @GetMapping("/getById/{id}")
     public ResponseEntity<Employee> getDataById(@PathVariable("id") int id){
         List<Employee> employeeList = EmployeeRepo.getAllEmp();
