@@ -29,7 +29,7 @@ public class myController {
         return new ResponseEntity<>(e1,HttpStatus.NOT_FOUND);
     }
 
-    //get emp data by name
+    //get Data By name API
     @GetMapping("/getByName/{name}")
     public ResponseEntity<Employee> getDatabyname(@PathVariable("name") String name){
         List<Employee> employeeList = EmployeeRepo.getAllEmp();
