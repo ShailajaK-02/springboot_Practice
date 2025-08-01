@@ -68,7 +68,7 @@ public class myController {
         return new ResponseEntity<>(empCityWise, HttpStatus.OK);
     }
 
-    //getbycity
+    //get data by city and id
     @GetMapping("/sorted")
     public ResponseEntity<List<Employee>> getAllemp(@RequestParam(required = false) String city){
         System.err.println("City value is : "+city);
