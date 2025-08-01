@@ -3,6 +3,7 @@ import com.spring.entity.Employee;
 import java.util.Arrays;
 import java.util.List;
 
+//Employee repository
 public class EmployeeRepo {
     public static List<Employee> getAllEmp(){
         Employee e = new Employee(101,"shailaja","kshirsagar","pune");
