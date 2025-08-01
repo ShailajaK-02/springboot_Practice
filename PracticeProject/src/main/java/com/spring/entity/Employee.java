@@ -1,5 +1,6 @@
 package com.spring.entity;
 
+//This is model class (As database is not added so it is not entity class)
 public class Employee {
     private int id;
 
