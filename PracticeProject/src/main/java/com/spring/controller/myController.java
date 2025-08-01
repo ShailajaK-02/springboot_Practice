@@ -42,7 +42,7 @@ public class myController {
         return new ResponseEntity<>(e1, HttpStatus.NOT_FOUND);
     }
 
-    //get data ignoring capital small uppercase lowercase
+    //get data by name igonre equalcase
     @GetMapping("/getByNameIgnoreCase/{name}")
     public ResponseEntity<Employee> dataByName(@PathVariable("name") String name){
         List<Employee> employeeList = EmployeeRepo.getAllEmp();
