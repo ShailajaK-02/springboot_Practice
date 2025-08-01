@@ -55,7 +55,7 @@ public class myController {
         return new ResponseEntity<>(e1, HttpStatus.NOT_FOUND);
     }
 
-    //get data by city
+    //get data by city API
     @GetMapping("/getDataByCity/{city}")
     public ResponseEntity<List<Employee>> getDataByCity(@PathVariable("city") String city){
         List<Employee> employeeList = EmployeeRepo.getAllEmp();
